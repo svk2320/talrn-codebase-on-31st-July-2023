@@ -1,0 +1,130 @@
+#profile-image{
+    align-self: flex-start;
+ 
+}
+
+#profile-bio{
+    font-size: 14px;
+    word-wrap: break-word;
+}
+.soft-skill{
+    border: 1px solid lightgray;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.soft-skill:hover{
+    background-color: #5272ffb6;
+    color: white;
+}
+#project-details{
+    padding-left:20px;
+    border-left: 1px dashed black;
+    word-wrap: break-word;
+}
+#project-title-text{
+    position: relative;
+    left: 20px;
+}
+#project-title::before{
+  content: "";
+  position: relative;
+  top: 16px;
+  right: 2px;
+  height: 8px;
+  width: 8px;
+  background-color: black;
+  font-size: 28px;
+  border-radius: 50%;
+  display: block;
+}
+.skill-pill{
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #5272ffb6;
+    padding: 1px 10px;
+    border-radius: 30px;
+    margin-bottom: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.skill-pill:hover{
+    background-color: #5272ff71;
+    color: white;
+}
+.skill-container{
+    padding-top: 10px;
+}
+.uid{
+    font-size: 12px;
+    color: red;
+    font-weight: normal;
+    margin-left: 30px;
+}
+
+.active{
+    font-size: 12px;
+    color: green;
+    font-weight: normal;
+    margin-left: 8px;
+}
+.subsection{
+    display: flex;
+    justify-content: space-between;
+}
+.actions-container{
+    display: flex;
+}
+.subsection-2{
+    display: flex;
+    justify-content: center;
+}
+.subsection-items div{
+    color: black;   
+    padding: 0px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.subsection-items div:hover{
+    color: white!important;
+    background-color: #5272ff;
+}
+@media only screen and (max-width:768px){
+    #profile-image-container{
+        justify-content: center;
+    }
+    .section-content{
+        margin-top: 20px;
+    }
+    #profile-image{
+        width: 100%;
+    }
+    #profile-title{
+        margin-top: 40px;
+    }
+    .subsection{
+        flex-direction: column;
+    }
+    .actions-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .subsection-items div{
+        margin-bottom: 10px;
+    }
+    #footer-section-one{
+        border-bottom: 1px solid white;
+        border-right: none !important;
+        padding-bottom: 40px;
+    }
+    #footer-section-two{
+        margin-top: 50px !important;
+    }
+    .bottom-footer{
+        padding: 0px 20px;
+    }
+}

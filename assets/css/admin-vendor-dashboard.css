@@ -1,0 +1,324 @@
+@import url('https://unpkg.com/swiper@10.0.3/swiper-bundle.min.css');
+
+
+    .popover-body {
+        font-family: var(--bs-body-font-family);
+        font-weight: var(--bs-body-font-weight);
+        line-height: var(--bs-body-line-height);
+        font-size: 12px;
+        color:black;
+        padding: 1rem 1.25rem 1rem;
+    }
+    
+    .popover {
+        max-width: 200px;
+        border-radius: 0.8rem;
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+        box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.3);
+    }
+    
+    .arrow {
+        margin-top: 1px;
+        margin-bottom: 10px;
+    }
+
+    
+    @keyframes progress {
+      0% { --percentage: 0; }
+      100% { --percentage: var(--value); }
+    }
+    
+    @property --percentage {
+      syntax: '<number>';
+      inherits: true;
+      initial-value: 0;
+    }
+    
+    [role="progressbar"] {
+      --percentage: var(--value);
+      --primary: var(--primary);
+      --secondary: var(--seconday);
+      --size: 60px;
+      animation: progress 2s 1s forwards;
+      width: var(--size);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+    }
+    
+    [role="progressbar"]::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: conic-gradient(from 360deg, var(--secondary) calc((100 - var(--percentage)) * 1%), var(--primary) 0);
+      mask: radial-gradient(white 50%, transparent 0);
+      mask-mode: alpha;
+      -webkit-mask: radial-gradient(#0000 50%, #000 0);
+      -webkit-mask-mode: alpha;
+    }
+    
+    [role="progressbar"]::after {
+      counter-reset: percentage var(--value);
+      /*content: counter(percentage) '%';*/
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: calc(var(--size) / 5);
+      color: var(--primary);
+    }
+    
+    .progress-text{
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+        
+    .slide-container{
+      width: 100%;
+      padding: 10px 0;
+    }
+    .slide-content{
+      margin: 0 10px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .card1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      /* min-width: 370px; */
+      /* max-width:370px; */
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(164, 174, 198, 0.2);
+      border-radius: 0.9rem;
+      box-shadow: 0 4px 8px rgba(200, 196, 196, 0.2);; /* Add a shadow effect to the card */
+    }
+    
+    .card-content1 {
+      padding: 1.25rem !important;
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    }
+    .flex-row {
+      flex-direction: row !important;
+    }
+    
+    .d-flex {
+      display: flex !important;
+    }
+    .avatar {
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 65px; /* Adjust the size of the circle as needed */
+      height: 65px; /* Adjust the size of the circle as needed */
+      background-color: #FAB758;
+      font-size: 20px;
+      font-weight:20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect to the circle */
+    }
+    
+    .badge1 {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      margin-top: 0.5em; /* Add a gap between the circle and the badge */
+      border-radius: 0.5rem;
+      background-color: #E0E9FA;
+      color: blue;
+      font-size:12px;
+      /* margin-bottom: 5px; */
+    }
+    .text-white {
+      color: #ffffff !important;
+      font-weight:30px;
+    }
+    .mb-1{
+      color:#343F52;
+      font-size:19px;
+      /* margin-bottom: 5px; */
+    }
+    .mb-0 {
+      margin-bottom: 0 !important;
+    }
+        .row {
+          display: flex;
+          flex-direction: row;
+          margin-bottom:15px;
+          justify-content: center;
+        }
+    
+    @media screen and (max-width: 768px) {
+      .slide-content{
+        margin: 0 10px;
+      }
+      .swiper-navBtn{
+        display: none;
+      }
+    }
+    
+
+    .slide-container{
+      width: 100%;
+      padding: 10px 0;
+    }
+
+    .slide-content{
+      margin: 0 10px;
+      overflow: hidden;
+      border-radius: 10px;
+      position: relative;
+    }
+
+    .card1 {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      /* min-width: 370px; */
+      /* max-width:370px; */
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 1px solid rgba(164, 174, 198, 0.2);
+      border-radius: 0.9rem;
+      box-shadow: 0 4px 8px rgba(200, 196, 196, 0.2);; /* Add a shadow effect to the card */
+    }
+
+    .card-content1 {
+      padding: 1.25rem !important;
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    }
+
+    .flex-row {
+      flex-direction: row !important;
+    }
+
+    .d-flex {
+      display: flex !important;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 65px; /* Adjust the size of the circle as needed */
+      height: 65px; /* Adjust the size of the circle as needed */
+      background-color: #FAB758;
+      font-size: 20px;
+      font-weight:20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow effect to the circle */
+    }
+
+    .badge1 {
+      display: inline-block;
+      padding: 0.25em 0.5em;
+      margin-top: 0.5em; /* Add a gap between the circle and the badge */
+      border-radius: 0.5rem;
+      background-color: #E0E9FA;
+      color: blue;
+      font-size:12px;
+      /* margin-bottom: 5px; */
+    }
+
+    .text-white {
+      color: #ffffff !important;
+      font-weight:30px;
+    }
+
+    .mb-1{
+      color:#343F52;
+      font-size:19px;
+      /* margin-bottom: 5px; */
+    }
+
+    .mb-0 {
+      margin-bottom: 0 !important;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      margin-bottom:15px;
+      justify-content: center;
+    }
+
+    .swiper-navBtn{
+      color: #6E93f7;
+      transition: color 0.3s ease;
+    }
+    .swiper-navBtn:hover{
+      color: #4070F4;
+    }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after{
+      font-size: 25px;
+    }
+
+    .swiper-pagination-bullet{
+      background-color: #6E93f7;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active{
+      background-color: #4070F4;
+    }
+
+    .swiper-navBtn {
+        position: absolute;
+        top: initial;
+        bottom: 20px;
+        transform: translateY(0);
+        transition: all 0.3s ease;
+    }
+
+  .swiper-pagination {
+     display: none;
+   }
+
+  .card1 {
+     margin-bottom: 70px;
+   }
+
+    .swiper-navBtns {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      top: 93%;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px; /* Adjust the width as needed */
+      height: 40px; 
+      background-color: #6E93f7;
+      color: white;
+      border-radius: 50%;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .swiper-button-prev {
+      left: -50px; 
+    }
+
+    .swiper-button-next {
+      right: -50px; 
+    }
+

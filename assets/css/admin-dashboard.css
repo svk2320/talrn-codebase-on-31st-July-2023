@@ -1,0 +1,119 @@
+@import url('https://unpkg.com/swiper@10.0.3/swiper-bundle.min.css');
+
+  @media (min-width: 995px) {
+    .firstRows {
+      height: 125px !important;
+    }
+  }
+
+  input[type=checkbox],
+  input[type=radio] {
+    margin-left: 24px !important;
+  }
+
+  .card-body.recent-searches {
+    overflow-y: hidden;
+    height: 447px;
+  }
+
+  .slide-container {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .slide-content {
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 370px;
+    max-width: 370px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(164, 174, 198, 0.2);
+    border-radius: 0.9rem;
+    box-shadow: 0 4px 8px rgba(200, 196, 196, 0.2);
+    ;
+    /* Add a shadow effect to the card */
+  }
+
+  .card-content1 {
+    padding: 1.25rem !important;
+    /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+  }
+
+  .flex-row {
+    flex-direction: row !important;
+  }
+
+  .d-flex {
+    display: flex !important;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+    /* Adjust the size of the circle as needed */
+    height: 65px;
+    /* Adjust the size of the circle as needed */
+    background-color: #FAB758;
+    font-size: 20px;
+    font-weight: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Add a shadow effect to the circle */
+  }
+
+  .badge1 {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin-top: 0.5em;
+    /* Add a gap between the circle and the badge */
+    border-radius: 0.5rem;
+    background-color: #E0E9FA;
+    color: blue;
+    font-size: 12px;
+    /* margin-bottom: 5px; */
+  }
+
+  .text-white {
+    color: #ffffff !important;
+    font-weight: 30px;
+  }
+
+  .mb-1 {
+    color: #343F52;
+    font-size: 19px;
+    /* margin-bottom: 5px; */
+  }
+
+  .mb-0 {
+    margin-bottom: 0 !important;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 768px) {
+    .slide-content {
+      margin: 0 10px;
+    }
+
+    .swiper-navBtn {
+      display: none;
+    }
+  }

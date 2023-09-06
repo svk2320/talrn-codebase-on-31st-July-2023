@@ -1,0 +1,153 @@
+
+
+    .service-box .services-icon,
+    .price-features p i,
+    .faq-icon,
+    .social .social-icon:hover {
+        color: #5271FF !important;
+    }
+    
+    sup {
+      top: 22px;
+      left: -5px;
+      font-size: 0.60em;
+      font-weight: 500;
+      vertical-align: top;
+    }
+    
+    .btn {
+        color: white;
+        letter-spacing: -0.01rem;
+        font-weight: 700;
+        transition: all 0.2s ease-in-out;
+    }
+    
+    .bg-custom,
+    .btn-custom,
+    .timeline-page .timeline-item .date-label-left::after,
+    .timeline-page .timeline-item .duration-right::after,.back-to-top:hover {
+        background-color: #5271FF;
+    }
+    
+    .btn-custom,
+    .custom-form .form-control:focus,
+    .social .social-icon:hover,
+    .registration-input-box:focus {
+        border-color: #5271FF;
+        border-radius: 22px;
+    }
+    
+    .service-box .services-icon,
+    .price-features p i {
+        background-color: rgba(82, 113, 255, 0.1);
+    }
+    
+    .price-box {
+        padding: 40px 50px;
+    }
+    
+    .plan-price h1 span {
+        font-size: 16px;
+        color: #000;
+    }
+    
+    .price-features p i {
+        height: 20px;
+        width: 20px;
+        display: inline-block;
+        text-align: center;
+        line-height: 20px;
+        font-size: 14px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    
+    .text-box {
+        display: flex;
+        align-items: flex-start;
+        color: #60697b !important;
+    }
+    
+    .text-box i {
+      margin-right: 5px;
+    }
+    
+    .main-text-center {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .col-lg-4.main-text-center .main-text h2 {
+        line-height: 0.5;
+        font-weight: 600;
+        font-family: "DM Serif Display";
+        font-weight: 400 !important;
+        word-spacing: normal !important;
+        font-size: 49px;
+    }
+    
+    .pricing-container {
+        font-family: 'DM Serif Display', sans-serif;
+        margin-left: 35px;
+    }
+    
+    .btn:hover {
+      transform: translateY(-0.2em);
+    }
+    
+    .pricing-name .m-2 {
+        word-spacing: 0.1rem;
+        letter-spacing: -0.01rem;
+        color: #343f52;
+        line-height: 1.45;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    .price-duration {
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+        color: #60697b !important;
+    }
+    
+    .card-body {
+        flex: 1 1 auto;
+        padding: 2rem 2rem;
+    }
+    
+    @media (max-width: 992px) {
+        .row.gy-6.align-items-center.mb-14.mb-md-18.w-100 {
+            padding-right: 5px;
+        }
+        
+        .col-lg-7.offset-lg-1.pricing-wrapper{
+            padding-left: 40px
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .main-text-center {
+            margin-top: 30px !important;
+        }
+    }
+    
+    @media (max-width: 589px) {
+       .pricing-container {
+            margin-left: 0px;
+        }
+        
+        .main-text-center {
+            padding-right: 25px;
+        }
+        
+        .col-lg-4.main-text-center .main-text h2 {
+            font-size: 40px !important;
+            text-align: center;
+        }
+        
+        .col-lg-4.main-text-center .sub-text {
+            text-align: center;
+        }
+    }
+    

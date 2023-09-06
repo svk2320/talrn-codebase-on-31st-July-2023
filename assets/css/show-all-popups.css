@@ -1,0 +1,24 @@
+
+/* Custom CSS for the white box with shadow */
+.white-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow values as needed */
+  margin: 20px;
+  width: 100%;
+  position: relative;
+}
+
+/* The following CSS rule is not closed properly */
+.pre {
+    font: inherit;
+    text-align: left;
+    /*white-space: pre-wrap;*/
+}
+
+.create-date {
+    position: absolute;
+    right: 2%;
+    top: 1%;
+}

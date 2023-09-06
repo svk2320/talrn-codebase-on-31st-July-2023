@@ -1,0 +1,129 @@
+
+.no-result-item {
+  color: grey;
+  pointer-events: none;
+}
+    
+.position-relative {
+  position: relative;
+}
+
+.loading-circle {
+  position: absolute;
+  top: 27%;
+  right: 20px;
+  /*transform: translateY(-50%);*/
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-top-color: #2c7dfa;
+  animation: spin 1s linear infinite;
+  visibility: hidden;
+}
+
+.loading-circle.show {
+  visibility: visible;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.box {
+  padding: 0.5em;
+  width: 100%;
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.box-2 {
+  padding: 0.5em;
+  width: calc(100% / 2 - 1em);
+}
+
+.options label,
+.options input {
+  width: 4em;
+  padding: 0.5em 1em;
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.cropped {
+        width: 160px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+
+ /*Popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+}
+
+.popup-content {
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.center-heading {
+  text-align: center;
+}
+
+.bold-heading {
+  font-weight: bold;
+}
+
+@media (max-width: 766px) {
+   /*Adjust the popup width and height for smaller devices */
+  .popup-content {
+    max-width: 100%;
+    max-height: 100%;
+    top: 50%;
+  }
+}
+
+/* Hide the radio icons */
+.job-status-radio {
+display: none;
+}
+
+/* Add styles for the selected card */
+.card.selected {
+border-color: #007bff;
+box-shadow: 0 0 0 3px rgba(0, 123, 255, 1);
+}

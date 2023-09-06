@@ -1,0 +1,20 @@
+
+.popover-body {
+    font-family: var(--bs-body-font-family);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    font-size: 12px;
+    color:black;
+    padding: 1rem 1.25rem 1rem;
+}
+.popover{
+    max-width: 200px;
+    border-radius: 0.8rem;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    box-shadow: 0rem 0rem 1.25rem rgba(30, 34, 40, 0.3);
+}
+.popover-arrow{
+    margin-top: 1px;
+    margin-bottom: 1px;
+}

@@ -1,0 +1,26 @@
+
+.card {
+  height: 200px;
+  /* width: ; */
+}
+
+@import url(https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1);
+.counter-wrapper .counter,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6,
+.post-title {
+    font-family: "Arial";
+    font-weight: 400 !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important
+}
+
+.underline-2 {
+  /* border-bottom: 3px solid black; */
+  color: black;
+}
+

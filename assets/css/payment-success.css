@@ -1,0 +1,40 @@
+    .page-banner {
+        background-image: url('../img/verified/payment-banner.png');
+        height: 150px;
+        background-size: cover;
+        position: relative;
+        z-index: -1;
+    }
+
+    .banner-title {
+        background-color: #5271FF;
+        color: #fff;
+        text-align: center;
+        width: 350px;
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .banner-title {
+            width: 100%;
+            font-size: 14px;
+        }
+    }
+
+    .header-bg-img {
+        margin-top: -20px;
+    }
+
+    .return-button {
+        background-color: #5271FF;
+        color: #fff;
+        text-align: center;
+        width: 160px;
+        margin: auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
